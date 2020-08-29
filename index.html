@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joe's 'Random Password Generator</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+</head>
+</div>
+</form>
+
+<body>
+    <nav class="navbar navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Random Passwd generator</a>
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-sm-12">
+                <div class="content">
+                    <h4>Joe's Random Password Generator</h4>
+                    <br />
+                    <input type="text" id="display">
+                    <br />
+                    <input type="range" min="0" max="50" name="slider" id="slider">
+                    <br />
+                    <button onclick="generate()">Generate</button>
+                    <button onclick="copyPassword">Copy to Clipboard</button>
+                    <div id="length"></div>
+                    <div class="previous-passwords">
+                        <b>Previously Generated Passwords</b>
+                        <br />
+                        <div id="lastNums"></div>
+                        <div id="questions">
+                            <input type="checkbox">How many Characters would you like in your password:
+                            <br/>
+                            <input type="checkbox">Would you like lowercase characters in your password:
+                            <br/>
+                            <input type="checkbox">Would you like uppercase characters in your password:
+                            <br/>
+                            <input type="checkbox">Would you like special characters in your password:
+                            <br/>
+                            <input type="checkbox">Would you like numbers in your password:
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+<footer>Designed and written by Joe kazem &copy 2020</footer>
+
+</html>
